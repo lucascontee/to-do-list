@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Source+Code+Pro&display=swap');
+/*font-family: 'Barlow Condensed', sans-serif;*/
+
+
+
+/*Configs Gerais*/
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Barlow Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(43, 61, 43), rgb(30, 44, 30));
+}
+
+button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(57, 83, 57);
+    border: 2px solid rgb(57, 83, 57);
+    padding: .3rem .6rem;
+    font-weight: bold;
+    font-size: 1rem; 
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+button:hover{
+    background-color: rgb(57, 83, 57);  
+    color: white;
+}
+
+button i{
+    pointer-events: none;
+}
+
+input, select{
+    padding: 0.25rem 0.5rem;
+    border: 1px solid rgb(30, 44, 30);
+    border-radius: 5px;
+    background-color: rgba(152, 245, 152, 0.479);
+
+}
+
+input::placeholder{
+    color: rgb(30, 44, 30);
+}
+
+
+
+
+.hide{
+    display: none;
+}
+ p, h2, h3, h4{
+    color: rgb(46, 66, 46);
+ }
+
+
+
+/*To do Header*/
+
+section.todo-container{
+    background-color: rgb(255, 255, 255);
+    margin: 33vh auto;
+    max-width: 450px;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.todo-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid rgba(57, 83, 57, 0.418);
+}
+
+header h1{
+    font-size: 2.5em;
+    color: rgb(30, 44, 30);
+}
+
+
+
+/*To do Form*/
+#todo-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(57, 83, 57, 0.418);
+}
+
+#todo-form p, #edit-form p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control{
+    display: flex;
+
+}
+
+.form-control input{
+    margin-right: 0.3rem;
+}
+
+#cancel-edit-btn{
+    margin-top: 1rem;
+}
+
+
+/*To do toolbar*/
+div#toolbar{
+    padding: 1rem;
+    border-bottom: 1px solid rgba(57, 83, 57, 0.418);
+    display: flex;
+}
+
+#toolbar h4{
+    margin-bottom: .5rem;
+}
+
+#search{
+    border-right: 1px solid rgba(57, 83, 57, 0.418);
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form{
+    display: flex;
+}
+
+#search input{
+    width: 100%;
+    margin-right: .3rem;
+}
+
+#filter{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select{
+    flex: 1;
+}
+
+
+/*To do list*/
+
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(57, 83, 57, 0.418);
+    transition: .3s;
+}
+
+.todo h3{
+    flex: 1;
+    font-size: .9rem;
+}
+
+.todo button{
+    margin: .2rem;
+}
+
+.done{
+    background-color: rgb(30, 44, 30);
+    
+}
+
+.done h3{
+    color: white;
+    text-decoration: line-through;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.done button{
+    background-color: rgb(30, 44, 30);
+    border: 2px solid white;
+    color: white;
+}
+
+.done button:hover{
+    background-color: white;
+    color: rgb(30, 44, 30);
+}
