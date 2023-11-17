@@ -18,8 +18,14 @@
         text-align: center;
     }
 
+    input{
+        width: 70%;
+        height: 35px;   
+    }
+
     input, button{
         margin: auto;
+        height: 35px;
     }
 
 
