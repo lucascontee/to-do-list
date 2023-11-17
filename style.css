@@ -3,6 +3,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Source+Code+Pro&display=swap');
 /*font-family: 'Barlow Condensed', sans-serif;*/
 
+@media screen and (max-width: 500px) {
+    
+    header h1{
+        font-size: 2em;
+        color: rgb(30, 44, 30);
+    }
+
+    section.todo-container{
+        width: 90%;
+    }
+
+    #todo-form, #edit-form{
+        text-align: center;
+    }
+
+    input, button{
+        margin: auto;
+    }
+
+
+
+
+}
+
 
 
 /*Configs Gerais*/
