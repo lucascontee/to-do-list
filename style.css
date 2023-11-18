@@ -54,6 +54,7 @@ button{
     padding: .3rem .6rem;
     font-weight: bold;
     font-size: 1rem; 
+    border-radius: 5px;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -68,6 +69,11 @@ button:hover{
 
 button i{
     pointer-events: none;
+}   
+
+button.remove-todo:hover{
+    background-color: rgb(131, 23, 23);
+    border: 2px solid rgb(70, 2, 2);
 }
 
 input, select{
